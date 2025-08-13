@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rawad The Barber - Legal Documents</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f5;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #8B4513, #D4AF37);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            margin-bottom: 30px;
+            border-radius: 10px;
+        }
+        
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        
+        .header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+        
+        .nav {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            margin-bottom: 40px;
+            flex-wrap: wrap;
+        }
+        
+        .nav a {
+            background: #8B4513;
+            color: white;
+            text-decoration: none;
+            padding: 15px 30px;
+            border-radius: 25px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        
+        .nav a:hover {
+            background: #D4AF37;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+        }
+        
+        .document {
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+            display: none;
+        }
+        
+        .document.active {
+            display: block;
+        }
+        
+        .document h1 {
+            color: #8B4513;
+            border-bottom: 3px solid #D4AF37;
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+        }
+        
+        .document h2 {
+            color: #8B4513;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-size: 1.3em;
+        }
+        
+        .document h3 {
+            color: #D4AF37;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+        
+        .document p, .document li {
+            margin-bottom: 10px;
+        }
+        
+        .document ul {
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+        
+        .contact-info {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid #D4AF37;
+            margin: 20px 0;
+        }
+        
+        .footer {
+            text-align: center;
+            padding: 40px 20px;
+            color: #666;
+            border-top: 1px solid #ddd;
+            margin-top: 50px;
+        }
+        
+        .effective-date {
+            background: #e8f4f8;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            text-align: center;
+            font-weight: 600;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+            
+            .header h1 {
+                font-size: 2em;
+            }
+            
+            .document {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Rawad The Barber</h1>
+            <p>Professional Barbering Excellence</p>
+            <p>📞 052-204-1066 | 📍 Israel</p>
+        </div>
+        
+        <div class="nav">
+            <a href="#" onclick="showDocument('home')">Home</a>
+            <a href="#" onclick="showDocument('privacy')">Privacy Policy</a>
+            <a href="#" onclick="showDocument('terms')">Terms of Service</a>
+            <a href="#" onclick="showDocument('contact')">Contact</a>
+        </div>
+        
+        <!-- Home Document -->
+        <div id="home" class="document active">
+            <h1>Welcome to Rawad The Barber</h1>
+            
+            <p>Welcome to the official legal documents page for Rawad The Barber mobile application. Here you can find our Privacy Policy, Terms of Service, and contact information.</p>
+            
+            <h2>Our Services</h2>
+            <ul>
+                <li><strong>Professional Hair Cutting</strong> - ₪50 per appointment</li>
+                <li><strong>20-minute appointments</strong> for personalized service</li>
+                <li><strong>Easy mobile booking</strong> through our app</li>
+                <li><strong>Flexible scheduling</strong> to fit your lifestyle</li>
+            </ul>
+            
+            <h2>Business Hours</h2>
+            <ul>
+                <li><strong>Sunday:</strong> 11:00 - 20:00 (Break: 14:40 - 16:00)</li>
+                <li><strong>Monday:</strong> Closed</li>
+                <li><strong>Tuesday:</strong> 11:00 - 20:00 (Break: 14:40 - 16:00)</li>
+                <li><strong>Wednesday:</strong> 11:00 - 20:00 (Break: 14:40 - 16:00)</li>
+                <li><strong>Thursday:</strong> 11:00 - 20:00 (Break: 14:40 - 16:00)</li>
+                <li><strong>Friday:</strong> 13:40 - 21:00</li>
+                <li><strong>Saturday:</strong> 09:00 - 16:00</li>
+            </ul>
+            
+            <div class="contact-info">
+                <h3>Download Our App</h3>
+                <p>Get the Rawad The Barber app to book your appointments easily:</p>
+                <ul>
+                    <li>📱 Available on iOS App Store</li>
+                    <li>🤖 Available on Google Play Store</li>
+                    <li>🔒 Secure PIN-based login</li>
+                    <li>📅 Real-time booking availability</li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- Privacy Policy Document -->
+        <div id="privacy" class="document">
+            <div class="effective-date">
+                <strong>Effective Date:</strong> January 15, 2025 | <strong>Last Updated:</strong> January 15, 2025
+            </div>
+            
+            <h1>Privacy Policy</h1>
+            
+            <h2>1. Introduction</h2>
+            <p>Rawad The Barber ("we," "our," or "us") respects your privacy and is committed to protecting your personal information. This Privacy Policy explains how we collect, use, and protect your information when you use our mobile application.</p>
+            
+            <div class="contact-info">
+                <strong>Contact Information:</strong><br>
+                📞 Phone: 052-204-1066<br>
+                📍 Location: Israel<br>
+                📧 Email: [Your Email Address]
+            </div>
+            
+            <h2>2. Information We Collect</h2>
+            
+            <h3>Personal Information You Provide:</h3>
+            <ul>
+                <li><strong>Full Name:</strong> For booking identification</li>
+                <li><strong>Phone Number:</strong> Used as your login credential and for communication</li>
+                <li><strong>Birthday:</strong> For personalized service</li>
+                <li><strong>PIN:</strong> Encrypted 4-digit access code</li>
+            </ul>
+            
+            <h3>Booking Information:</h3>
+            <ul>
+                <li><strong>Appointment Details:</strong> Date, time, and service selections</li>
+                <li><strong>Booking History:</strong> Past and upcoming appointments</li>
+                <li><strong>Service Preferences:</strong> Your preferred services</li>
+            </ul>
+            
+            <h3>Technical Information:</h3>
+            <ul>
+                <li><strong>Device Information:</strong> Device type, operating system</li>
+                <li><strong>App Usage:</strong> How you interact with our app (anonymized)</li>
+                <li><strong>Error Logs:</strong> Technical issues for app improvement</li>
+            </ul>
+            
+            <h2>3. How We Use Your Information</h2>
+            <p>We use your information to:</p>
+            <ul>
+                <li>Process and manage your bookings</li>
+                <li>Send booking confirmations and reminders</li>
+                <li>Provide customer support</li>
+                <li>Improve our app and services</li>
+                <li>Communicate important updates</li>
+            </ul>
+            
+            <p><strong>We DO NOT:</strong></p>
+            <ul>
+                <li>Sell your information to third parties</li>
+                <li>Use your data for advertising</li>
+                <li>Share your information without consent</li>
+            </ul>
+            
+            <h2>4. Your Rights</h2>
+            <p>You have the right to:</p>
+            <ul>
+                <li><strong>Access:</strong> View all your stored information</li>
+                <li><strong>Update:</strong> Modify your personal details anytime</li>
+                <li><strong>Delete:</strong> Request complete account deletion</li>
+                <li><strong>Export:</strong> Download your data in standard format</li>
+            </ul>
+            
+            <h2>5. Data Security</h2>
+            <p>Your information is protected by:</p>
+            <ul>
+                <li>Encryption in transit and at rest</li>
+                <li>Firebase enterprise-grade security</li>
+                <li>Hashed and salted PIN storage</li>
+                <li>Limited access controls</li>
+            </ul>
+            
+            <h2>6. Contact Us</h2>
+            <p>For privacy-related questions:</p>
+            <div class="contact-info">
+                📞 Phone: 052-204-1066<br>
+                📧 Email: [Your Email Address]<br>
+                📍 Location: Israel
+            </div>
+        </div>
+        
+        <!-- Terms of Service Document -->
+        <div id="terms" class="document">
+            <div class="effective-date">
+                <strong>Effective Date:</strong> January 15, 2025 | <strong>Last Updated:</strong> January 15, 2025
+            </div>
+            
+            <h1>Terms of Service</h1>
+            
+            <h2>1. Acceptance of Terms</h2>
+            <p>By downloading, installing, or using the Rawad The Barber mobile application ("App"), you agree to be bound by these Terms of Service. If you do not agree to these Terms, please do not use our App.</p>
+            
+            <h2>2. Description of Service</h2>
+            <p>Our App provides:</p>
+            <ul>
+                <li>Hair cutting appointment booking</li>
+                <li>Schedule management</li>
+                <li>Booking history tracking</li>
+                <li>Direct communication with the barber</li>
+                <li>Service information and pricing</li>
+            </ul>
+            
+            <div class="contact-info">
+                <strong>Service Details:</strong><br>
+                💇‍♂️ Primary Service: Professional Hair Cutting<br>
+                💰 Price: ₪50 per appointment<br>
+                ⏱️ Duration: 20 minutes per appointment<br>
+                📍 Location: Israel
+            </div>
+            
+            <h2>3. Booking Terms</h2>
+            
+            <h3>Making Appointments:</h3>
+            <ul>
+                <li>Bookings are confirmed immediately upon submission</li>
+                <li>All bookings subject to barber availability</li>
+                <li>You will receive confirmation of your appointment</li>
+            </ul>
+            
+            <h3>Changes and Cancellations:</h3>
+            <ul>
+                <li>Cancellations must be made through the app</li>
+                <li>Contact us for rescheduling requests</li>
+                <li>No-shows may result in booking restrictions</li>
+            </ul>
+            
+            <h2>4. Business Hours</h2>
+            <ul>
+                <li><strong>Sunday:</strong> 11:00 - 20:00 (Break: 14:40 - 16:00)</li>
+                <li><strong>Monday:</strong> Closed</li>
+                <li><strong>Tuesday:</strong> 11:00 - 20:00 (Break: 14:40 - 16:00)</li>
+                <li><strong>Wednesday:</strong> 11:00 - 20:00 (Break: 14:40 - 16:00)</li>
+                <li><strong>Thursday:</strong> 11:00 - 20:00 (Break: 14:40 - 16:00)</li>
+                <li><strong>Friday:</strong> 13:40 - 21:00</li>
+                <li><strong>Saturday:</strong> 09:00 - 16:00</li>
+            </ul>
+            
+            <h2>5. User Conduct</h2>
+            
+            <h3>Acceptable Use:</h3>
+            <ul>
+                <li>Use the App only for its intended purpose</li>
+                <li>Provide accurate information</li>
+                <li>Respect staff and other users</li>
+                <li>Follow all applicable laws</li>
+            </ul>
+            
+            <h3>Prohibited Activities:</h3>
+            <ul>
+                <li>Making false or fraudulent bookings</li>
+                <li>Harassing staff or other users</li>
+                <li>Attempting to hack or disrupt the App</li>
+                <li>Using automated booking systems</li>
+            </ul>
+            
+            <h2>6. Payment and Pricing</h2>
+            <ul>
+                <li>Payment due at time of service</li>
+                <li>Accepted methods: Cash, Card</li>
+                <li>Price: ₪50 per hair cut</li>
+                <li>Prices subject to change with notice</li>
+            </ul>
+            
+            <h2>7. Limitation of Liability</h2>
+            <p>Our liability is limited to the cost of service (₪50). We are not liable for:</p>
+            <ul>
+                <li>Indirect or consequential damages</li>
+                <li>Hair cutting result satisfaction</li>
+                <li>Allergic reactions to products</li>
+                <li>App technical issues</li>
+            </ul>
+            
+            <h2>8. Contact Information</h2>
+            <div class="contact-info">
+                📞 Phone: 052-204-1066<br>
+                📧 Email: [Your Email Address]<br>
+                📍 Location: Israel
+            </div>
+        </div>
+        
+        <!-- Contact Document -->
+        <div id="contact" class="document">
+            <h1>Contact Information</h1>
+            
+            <h2>Rawad The Barber</h2>
+            
+            <div class="contact-info">
+                <h3>📞 Phone</h3>
+                <p>052-204-1066</p>
+                
+                <h3>📧 Email</h3>
+                <p>[Your Email Address]</p>
+                
+                <h3>📍 Location</h3>
+                <p>Israel</p>
+                
+                <h3>🕒 Business Hours</h3>
+                <ul>
+                    <li><strong>Sunday:</strong> 11:00 - 20:00 (Break: 14:40 - 16:00)</li>
+                    <li><strong>Monday:</strong> Closed</li>
+                    <li><strong>Tuesday:</strong> 11:00 - 20:00 (Break: 14:40 - 16:00)</li>
+                    <li><strong>Wednesday:</strong> 11:00 - 20:00 (Break: 14:40 - 16:00)</li>
+                    <li><strong>Thursday:</strong> 11:00 - 20:00 (Break: 14:40 - 16:00)</li>
+                    <li><strong>Friday:</strong> 13:40 - 21:00</li>
+                    <li><strong>Saturday:</strong> 09:00 - 16:00</li>
+                </ul>
+            </div>
+            
+            <h2>For Support</h2>
+            <ul>
+                <li><strong>App Issues:</strong> Contact us during business hours</li>
+                <li><strong>Booking Problems:</strong> Call 052-204-1066</li>
+                <li><strong>Privacy Requests:</strong> Email us or call</li>
+                <li><strong>General Inquiries:</strong> Phone preferred</li>
+            </ul>
+            
+            <h2>Response Times</h2>
+            <ul>
+                <li><strong>Phone calls:</strong> Immediate during business hours</li>
+                <li><strong>WhatsApp:</strong> Within 1-2 hours</li>
+                <li><strong>Email:</strong> Within 24 hours</li>
+                <li><strong>Privacy requests:</strong> Within 7 business days</li>
+            </ul>
+            
+            <h2>Download Our App</h2>
+            <p>Get the Rawad The Barber app for easy appointment booking:</p>
+            <ul>
+                <li>📱 iOS App Store: Coming Soon</li>
+                <li>🤖 Google Play Store: Coming Soon</li>
+            </ul>
+        </div>
+        
+        <div class="footer">
+            <p>&copy; 2025 Rawad The Barber. All rights reserved.</p>
+            <p>Professional barbering services in Israel</p>
+        </div>
+    </div>
+
+    <script>
+        function showDocument(docId) {
+            // Hide all documents
+            const documents = document.querySelectorAll('.document');
+            documents.forEach(doc => doc.classList.remove('active'));
+            
+            // Show selected document
+            document.getElementById(docId).classList.add('active');
+            
+            // Scroll to top
+            window.scrollTo(0, 0);
+        }
+    </script>
+</body>
+</html>
